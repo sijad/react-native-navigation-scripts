@@ -3,7 +3,7 @@
 ## Usage
 
 ```sh
-react-native init MyApp --template react-native-navigation-template
+react-native init MyApp --template rnn
 ```
 
 ## Contributing
