@@ -1,0 +1,7 @@
+---
+inject: true
+to: android/app/build.gradle
+after: From node_modules
+skip_if: :react-native-navigation
+---
+    implementation project(':react-native-navigation')

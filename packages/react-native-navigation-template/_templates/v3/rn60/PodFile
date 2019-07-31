@@ -1,0 +1,8 @@
+---
+inject: true
+to: ios/Podfile
+before: use_native_modules
+skip_if: ReactNativeNavigation
+---
+  pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
+

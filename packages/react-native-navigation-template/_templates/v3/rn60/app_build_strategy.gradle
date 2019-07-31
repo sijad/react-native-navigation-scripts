@@ -1,0 +1,8 @@
+---
+inject: true
+to: android/app/build.gradle
+after: targetSdkVersion
+skip_if: missingDimensionStrategy
+---
+        missingDimensionStrategy "RNN.reactNativeVersion", "reactNative60"
+
