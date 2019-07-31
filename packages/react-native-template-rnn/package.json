@@ -1,14 +1,15 @@
 {
   "name": "react-native-template-rnn",
   "description": "React Native Navigation template",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/sijad/react-native-navigation-scripts.git",
     "directory": "packages/react-native-template-rnn"
   },
   "scripts": {
-    "install": "node setup.js"
+    "install": "node setup.js",
+    "postinstall": "node cleanup.js"
   },
   "keywords": [
     "react-native",
