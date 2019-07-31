@@ -4,13 +4,17 @@ const path = require("path");
 const rimraf = require("rimraf");
 const fs = require("fs");
 
-const defaultTemplates = path.join(__dirname, "_templates");
+const defaultTemplates = path.join(__dirname, "templates");
 const projectPath = path.join(__dirname, "..", "..");
 
-const projectFilesToDelete = [".flowconfig", "App.js", "__tests__/App-test.js",   "setup.js",
+const projectFilesToDelete = [
+  ".flowconfig",
+  "App.js",
+  "__tests__/App-test.js",
+  "setup.js",
   "README.md",
   "LICENSE",
-  "_templates"
+  "templates"
 ];
 
 const appName = require(path.join(projectPath, "app.json")).name;
