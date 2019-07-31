@@ -1,7 +1,7 @@
 ---
-to: android/app/src/main/java/com/<%= appName %>/MainActivity.java
+to: android/app/src/main/java/com/<%= h.changeCase.lower(appName) %>/MainActivity.java
 ---
-package com.<%= appName %>;
+package com.<%= h.changeCase.lower(appName) %>;
 
 import com.reactnativenavigation.NavigationActivity;
 

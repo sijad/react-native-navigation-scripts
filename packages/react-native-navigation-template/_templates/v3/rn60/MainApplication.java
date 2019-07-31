@@ -1,7 +1,7 @@
 ---
-to: android/app/src/main/java/com/<%= appName %>/MainApplication.java
+to: android/app/src/main/java/com/h.changeCase.lower(appName)/MainApplication.java
 ---
-package com.<%= appName %>;
+package com.<%= h.changeCase.lower(appName) %>;
 
 import android.app.Application;
 import android.util.Log;

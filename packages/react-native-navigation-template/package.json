@@ -1,5 +1,5 @@
 {
-  "name": "react-native-navigation-template",
+  "name": "react-native-template-rnn",
   "scripts": {
     "install": "node setup.js"
   },
