@@ -1,5 +1,5 @@
 ---
-to: android/app/src/main/java/com/h.changeCase.lower(appName)/MainApplication.java
+to: android/app/src/main/java/com/<%= h.changeCase.lower(appName) %>/MainApplication.java
 ---
 package com.<%= h.changeCase.lower(appName) %>;
 
