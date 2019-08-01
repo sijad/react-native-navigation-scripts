@@ -1,9 +1,9 @@
-# react-native-navigation Template
+# React Native Navigation TypeScript Template
 
 ## Usage
 
 ```sh
-react-native init MyApp --template rnn
+react-native init MyApp --template rnn-typescript
 ```
 
 ## Contributing
