@@ -1,0 +1,39 @@
+{
+  "name": "react-native-navigation-scripts-monorepo",
+  "description": "React Native Navigation Templates and Helpers",
+  "author": "Sajjad Hashemian <wolaws@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "lint-staged"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^0.0.5",
+    "@types/react-native": "^0.60.2",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.2",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-native": "^0.60.4",
+    "react-native-navigation": "3.0.0-alpha.8",
+    "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint '**/*.{js,jsx}' --fix",
+      "git add"
+    ],
+    "**/*.{ts,tsx}": [
+      "eslint '**/*.{ts,tsx}' --fix",
+      "git add"
+    ]
+  }
+}

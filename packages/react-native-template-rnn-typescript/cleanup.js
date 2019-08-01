@@ -1,15 +1,15 @@
-const path = require("path");
-const rimraf = require("rimraf");
+const path = require('path');
+const rimraf = require('rimraf');
 
-const projectPath = path.join(__dirname, "..", "..");
+const projectPath = path.join(__dirname, '..', '..');
 
-const projectFilesToDelete = [".flowconfig", "App.js", "__tests__/App-test.js"];
+const projectFilesToDelete = ['.flowconfig', 'App.js', '__tests__/App-test.js'];
 const templateFilesToDelete = [
-  "setup.js",
-  "cleanup.js",
-  "README.md",
-  "LICENSE",
-  "templates"
+  'setup.js',
+  'cleanup.js',
+  'README.md',
+  'LICENSE',
+  'templates',
 ];
 
 const deleteFile = filePath => {
