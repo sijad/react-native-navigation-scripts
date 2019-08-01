@@ -1,6 +1,5 @@
 import React, { useCallback } from 'react';
 import { Options, Navigation } from 'react-native-navigation';
-import { ScreenProps } from '../../types';
 import {
   SafeAreaView,
   StyleSheet,
@@ -16,6 +15,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { ScreenProps } from '../types';
 
 interface HomeProps extends ScreenProps {}
 
@@ -23,7 +23,7 @@ export function Home({ componentId }: HomeProps) {
   const handlePushScreen = useCallback(() => {
     Navigation.push(componentId, {
       component: {
-        name: 'ScreenWithTopButton',
+        name: 'Other',
       },
     });
   }, [componentId]);
