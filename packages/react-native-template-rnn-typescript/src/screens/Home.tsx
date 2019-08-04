@@ -15,9 +15,10 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import { ScreenProps } from '../types';
 
-interface HomeProps extends ScreenProps {}
+interface HomeProps {
+  componentId: string;
+}
 
 export function Home({ componentId }: HomeProps) {
   const handlePushScreen = useCallback(() => {

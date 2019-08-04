@@ -2,9 +2,10 @@ import React, { useCallback } from 'react';
 import { Options, Navigation } from 'react-native-navigation';
 import { SafeAreaView, StyleSheet, View, Button } from 'react-native';
 import { Header, Colors } from 'react-native/Libraries/NewAppScreen';
-import { ScreenProps } from '../types';
 
-interface OtherProps extends ScreenProps {}
+interface OtherProps {
+  componentId: string;
+}
 
 export function Other({ componentId }: OtherProps) {
   const handlePopScreen = useCallback(() => {
