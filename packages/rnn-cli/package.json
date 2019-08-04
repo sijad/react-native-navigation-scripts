@@ -1,0 +1,14 @@
+{
+  "name": "rnn-cli",
+  "version": "0.0.1",
+  "description": "React Native Navigation CLI",
+  "bin": {
+    "rnn": "lib/bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sijad/react-native-navigation-scripts.git",
+    "directory": "packages/rnn-cli"
+  },
+  "license": "MIT"
+}
