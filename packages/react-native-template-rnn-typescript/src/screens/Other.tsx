@@ -3,7 +3,7 @@ import { Options, Navigation } from 'react-native-navigation';
 import { SafeAreaView, StyleSheet, View, Button } from 'react-native';
 import { Header, Colors } from 'react-native/Libraries/NewAppScreen';
 
-interface OtherProps {
+export interface OtherProps {
   componentId: string;
 }
 

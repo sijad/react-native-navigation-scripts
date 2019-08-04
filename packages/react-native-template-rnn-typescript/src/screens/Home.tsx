@@ -16,7 +16,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-interface HomeProps {
+export interface HomeProps {
   componentId: string;
 }
 
