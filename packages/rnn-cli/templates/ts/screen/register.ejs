@@ -1,0 +1,10 @@
+---
+inject: true
+to: src/screens/index.ts
+after: function registerScreens
+eof_last: false
+---
+<%
+  var ScreenName = h.inflection.camelize(screenName)
+-%>
+  Navigation.registerComponent('<%= ScreenName %>', () => require('./<%= ScreenName %>'));

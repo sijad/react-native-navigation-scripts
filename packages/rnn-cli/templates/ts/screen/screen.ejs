@@ -1,0 +1,36 @@
+---
+to: src/screens/<%= h.inflection.camelize(screenName) %>.tsx
+---
+<%
+  var ScreenName = h.inflection.camelize(screenName)
+-%>
+import React from 'react';
+import { Options } from 'react-native-navigation';
+import { SafeAreaView, StyleSheet, Text } from 'react-native';
+
+export interface <%= ScreenName %>Props {
+  componentId: string;
+}
+
+export function <%= ScreenName %>(props: <%= ScreenName %>Props) {
+  return (
+    <SafeAreaView style={styles.page}>
+      <Text>{'Welcome TO <%= screenName %>'}</Text>
+    </SafeAreaView>
+  );
+}
+
+<%= ScreenName %>.options = (): Options => ({
+  topBar: {
+    title: {
+      text: '<%= screenName %>',
+    },
+  },
+});
+
+const styles = StyleSheet.create({
+  page: {
+    flex: 1,
+    backgroundColor: 'white',
+  },
+});

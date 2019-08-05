@@ -10,5 +10,8 @@
     "url": "https://github.com/sijad/react-native-navigation-scripts.git",
     "directory": "packages/rnn-cli"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "hygen": "^4.0.7"
+  }
 }
