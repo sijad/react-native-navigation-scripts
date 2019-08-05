@@ -3,6 +3,7 @@ inject: true
 to: android/settings.gradle
 after: rootProject\.name
 skip_if: :react-native-navigation
+eof_last: false
 ---
 
 include ':react-native-navigation'

@@ -3,5 +3,6 @@ inject: true
 to: android/app/build.gradle
 after: From node_modules
 skip_if: :react-native-navigation
+eof_last: false
 ---
     implementation project(':react-native-navigation')
