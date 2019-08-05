@@ -3,5 +3,6 @@
   "@types/react-native": "latest",
   "@types/react-test-renderer": "latest",
   "@types/react": "latest",
+  "rnn-cli": "latest",
   "typescript": "latest"
 }
