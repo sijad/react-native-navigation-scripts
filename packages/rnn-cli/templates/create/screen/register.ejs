@@ -7,4 +7,4 @@ eof_last: false
 <%
   var ScreenName = h.inflection.camelize(screenName)
 -%>
-  Navigation.registerComponent('<%= ScreenName %>', () => require('./<%= ScreenName %>'));
+  Navigation.registerComponent('<%= ScreenName %>', () => require('./<%= ScreenName %>').<%= ScreenName %>);
