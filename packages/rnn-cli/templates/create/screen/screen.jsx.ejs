@@ -1,5 +1,5 @@
 ---
-to: "<%= ts === '0' ? 'src/screens/' + h.inflection.camelize(screenName) + '.jsx' : null %>"
+to: "<%= !ts ? 'src/screens/' + h.inflection.camelize(screenName) + '.jsx' : null %>"
 ---
 <%
   var ScreenName = h.inflection.camelize(screenName)

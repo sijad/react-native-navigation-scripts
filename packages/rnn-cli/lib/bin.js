@@ -9,7 +9,7 @@ const projectPath = path.join(__dirname, '..', '..', '..');
 
 const isTs = fs.existsSync(path.join(projectPath, 'tsconfig.json'));
 const appName = require(path.join(projectPath, 'app.json')).name;
-const args = process.argv.slice(2).concat(['--appName', appName, '--ts', isTs ? '1' : '0']);
+const args = process.argv.slice(2).concat(['--appName', appName, '--ts', isTs ? 1 : 0]);
 
 runner(args, {
   templates: defaultTemplates,

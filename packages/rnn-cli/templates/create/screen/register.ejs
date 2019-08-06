@@ -1,6 +1,6 @@
 ---
 inject: true
-to: src/screens/index.<%= ts === '1' ? 'ts' : 'js' %>
+to: "src/screens/index.<%= ts ? 'ts' : 'js' %>"
 after: function registerScreens
 eof_last: false
 ---
