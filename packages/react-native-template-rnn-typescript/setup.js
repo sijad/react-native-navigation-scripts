@@ -1,21 +1,29 @@
-const { runner } = require('hygen');
-const Logger = require('hygen/lib/logger');
 const path = require('path');
+const fs = require('fs');
+const execFileSync = require('child_process').execFileSync;
 
-const defaultTemplates = path.join(__dirname, 'templates');
 const projectPath = path.join(__dirname, '..', '..');
 
-const appName = require(path.join(projectPath, 'app.json')).name;
+const projectFilesToDelete = ['.flowconfig', 'App.js', '__tests__/App-test.js'];
+const templateFilesToDelete = [
+  'setup.js',
+  'README.md',
+  'LICENSE',
+];
 
-process.env.HYGEN_OVERWRITE = true;
-runner(['v3', 'rn60', '--appName', appName], {
-  templates: defaultTemplates,
-  cwd: projectPath,
-  logger: new Logger(console.log.bind(console)),
-  createPrompter: () => require('enquirer'),
-  exec: (action, body) => {
-    const opts = body && body.length > 0 ? { input: body } : {};
-    return require('execa').shell(action, opts);
-  },
-  debug: !!process.env.DEBUG,
-});
+const rnnPath = path.join(__dirname, '..', 'rnn-cli', 'lib', 'bin.js');
+execFileSync('node', [rnnPath, 'install', 'rnn'], { cwd: projectPath, env: { HYGEN_OVERWRITE: true } });
+
+const deleteFile = filePath => {
+  if (!fs.existsSync(filePath)) {
+    return;
+  }
+  fs.unlinkSync(filePath);
+};
+const deleteProjectFile = fileName =>
+  deleteFile(path.join(projectPath, fileName));
+const deleteTemplateFile = fileName =>
+  deleteFile(path.join(__dirname, fileName));
+
+projectFilesToDelete.forEach(deleteProjectFile);
+templateFilesToDelete.forEach(deleteTemplateFile);

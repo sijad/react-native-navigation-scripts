@@ -8,8 +8,7 @@
     "directory": "packages/react-native-template-rnn-typescript"
   },
   "scripts": {
-    "install": "node setup.js",
-    "postinstall": "node cleanup.js"
+    "install": "node setup.js"
   },
   "keywords": [
     "react-native",
@@ -18,7 +17,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "hygen": "^4.0.0",
-    "rimraf": "^2.6.0"
+    "rnn-cli": "^0.0.3"
   }
 }

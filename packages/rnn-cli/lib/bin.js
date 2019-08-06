@@ -8,8 +8,10 @@ const defaultTemplates = path.join(__dirname, '..', 'templates');
 const projectPath = path.join(__dirname, '..', '..', '..');
 
 const isTs = fs.existsSync(path.join(projectPath, 'tsconfig.json'));
+const appName = require(path.join(projectPath, 'app.json')).name;
+const args = process.argv.slice(2).concat(['--appName', appName, '--ts', isTs ? '1' : '0']);
 
-runner(process.argv.slice(2).concat(['--ts', isTs ? '1' : '0']), {
+runner(args, {
   templates: defaultTemplates,
   cwd: projectPath,
   logger: new Logger(console.log.bind(console)),
