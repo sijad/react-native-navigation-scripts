@@ -1,8 +1,6 @@
 const path = require('path');
 const fs = require('fs');
 
-const projectPath = path.join(__dirname, '..', '..');
-
 const templateFilesToDelete = [
   'setup.js',
   'README.md',
