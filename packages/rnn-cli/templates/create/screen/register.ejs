@@ -2,7 +2,6 @@
 inject: true
 to: "src/screens/index.<%= ts ? 'ts' : 'js' %>"
 after: function registerScreens
-eof_last: false
 ---
 <%
   var ScreenName = h.inflection.camelize(screenName)
