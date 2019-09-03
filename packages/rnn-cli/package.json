@@ -1,6 +1,6 @@
 {
   "name": "rnn-cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "React Native Navigation CLI",
   "bin": {
     "rnn": "lib/bin.js"
