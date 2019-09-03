@@ -1,7 +1,7 @@
 {
   "name": "react-native-template-rnn-typescript",
   "description": "React Native Navigation TypeScript Template",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "repository": {
     "type": "git",
     "url": "https://github.com/sijad/react-native-navigation-scripts.git",
@@ -18,6 +18,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "rnn-cli": "latest"
+    "rnn-cli": "^0.0"
   }
 }
