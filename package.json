@@ -17,7 +17,7 @@
     "lint-staged": "^9.2.1",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
-    "react-native": "^0.60.4",
+    "react-native": "^0.62.3",
     "react-native-navigation": "3.0.0-alpha.8",
     "typescript": "^3.5.3"
   },
